@@ -1,0 +1,61 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(/images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 500px;
+    text-align: center;
+}
+
+/*--------------------------------------------------*/
+.jumbotron {
+    text-align: center;
+    background: transparent;
+    padding: 0;
+    margin: 5em 0;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.bg-blur {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 600px;
+}
+
+img {
+    margin-right: 15px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+footer {
+    margin-top: auto;
+}
