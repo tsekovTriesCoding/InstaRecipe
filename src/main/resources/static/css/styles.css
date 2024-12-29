@@ -111,7 +111,8 @@
 .edit-recipe-section,
 .my-recipes-section,
 .profile-section,
-.category-section {
+.category-section,
+.about-us-section{
     background: url('/images/background.jpg') no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
@@ -125,7 +126,8 @@
 .edit-recipe-section::before,
 .my-recipes-section::before,
 .profile-section::before,
-.category-section::before {
+.category-section::before,
+.about-us-section::before{
     content: '';
     position: absolute;
     top: 0;
@@ -140,7 +142,8 @@
 .edit-recipe-section .container,
 .my-recipes-section .container,
 .profile-section .container,
-.category-section .container {
+.category-section .container,
+.about-us-section .container{
     z-index: 2;
     position: relative;
     color: white;
@@ -255,11 +258,7 @@
 }
 
 /*---------------------------- about-us styles*/
-.about-us-section, .team-section {
-    background: linear-gradient(to right, #ffafbd, #ffc3a0);
-    color: #fff;
-    padding: 60px 0;
-}
+
 
 
 
