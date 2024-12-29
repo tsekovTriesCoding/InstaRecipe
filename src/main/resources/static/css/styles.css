@@ -150,6 +150,97 @@
     background: linear-gradient(135deg, rgba(255, 87, 34, 1), rgba(255, 175, 75, 1));
 }
 
+/*--------------------------recipe-details styles*/
+.recipe-details-page {
+    position: relative;
+    background: url('/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white; /* Ensures text is readable over the dark background */
+}
+
+.recipe-details-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Adjust the opacity for darkness */
+    z-index: -1; /* Keeps the overlay behind the content */
+}
+.card.recipe-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    overflow: hidden;
+}
+
+.card.recipe-card .card-img-top {
+    object-fit: cover;
+    height: 300px;
+}
+
+.card.recipe-card .card-body {
+    background: rgba(255, 255, 255, 0.9);
+    border-top: 4px solid #f85a3e;
+}
+
+.card.recipe-card .btn-like {
+    background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
+    color: white;
+    border: none;
+}
+
+.card.recipe-card .btn-like:hover {
+    background: linear-gradient(135deg, rgba(255, 87, 34, 0.9), rgba(255, 175, 75, 0.9));
+}
+
+/* Comments section */
+.comments-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.comment-card {
+    background: rgba(250, 250, 250, 0.95);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    border: none;
+}
+
+.comment-card .card-body {
+    padding: 1rem 1.5rem;
+}
+
+.comment-card .comment-author {
+    font-weight: bold;
+    color: #333;
+}
+
+.comment-card .comment-text {
+    color: #555;
+}
+
+.comment-card .comment-time {
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+/* Buttons */
+.btn-add-comment {
+    background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
+    border: none;
+    color: white;
+    font-weight: bold;
+    max-width: 20%;
+}
+
+.btn-add-comment:hover {
+    background: linear-gradient(135deg, rgba(255, 87, 34, 1), rgba(255, 175, 75, 1));
+}
+
+
+
+
 
 
 
