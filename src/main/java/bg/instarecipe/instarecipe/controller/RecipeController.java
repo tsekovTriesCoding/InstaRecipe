@@ -21,4 +21,9 @@ public class RecipeController {
     public String details() {
         return "recipe-details";
     }
+
+    @GetMapping("/edit")
+    String edit() {
+        return "edit-recipe";
+    }
 }
