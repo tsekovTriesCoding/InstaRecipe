@@ -107,7 +107,7 @@
 
 /*-----------------------add recipe style*/
 
-.add-recipe-section, .edit-recipe-section {
+.add-recipe-section, .edit-recipe-section, .my-recipes-section, .profile-section {
     background: url('/images/background.jpg') no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
@@ -117,7 +117,7 @@
     position: relative;
 }
 
-.add-recipe-section::before,.edit-recipe-section::before {
+.add-recipe-section::before, .edit-recipe-section::before, .my-recipes-section::before, .profile-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -128,13 +128,13 @@
     z-index: 1;
 }
 
-.add-recipe-section .container,.edit-recipe-section .container {
+.add-recipe-section .container, .edit-recipe-section .container, .my-recipes-section .container, .profile-section .container {
     z-index: 2;
     position: relative;
     color: white;
 }
 
-.add-recipe-section .card,.edit-recipe-section .card {
+.add-recipe-section .card, .edit-recipe-section .card {
     background: rgba(255, 255, 255, 0.9);
     border-radius: 0.75rem;
     overflow: hidden;
@@ -168,6 +168,7 @@
     background: rgba(0, 0, 0, 0.6); /* Adjust the opacity for darkness */
     z-index: -1; /* Keeps the overlay behind the content */
 }
+
 .card.recipe-card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: none;
@@ -227,7 +228,7 @@
     color: #aaa;
 }
 
- /*Buttons */
+/*Buttons */
 .btn-add-comment {
     background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
     border: none;
