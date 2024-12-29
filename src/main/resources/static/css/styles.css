@@ -23,39 +23,3 @@ body {
 }
 
 /*--------------------------------------------------*/
-.jumbotron {
-    text-align: center;
-    background: transparent;
-    padding: 0;
-    margin: 5em 0;
-}
-
-.main-content {
-    flex: 1;
-}
-
-.bg-blur {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.container {
-    max-width: 600px;
-}
-
-img {
-    margin-right: 15px;
-}
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-footer {
-    margin-top: auto;
-}
