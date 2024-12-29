@@ -1,23 +1,23 @@
-.hero, .home {
+.hero {
     background: url('/images/background.jpg') center center/cover no-repeat;
     color: black;
     padding: 100px 20px;
     text-align: center;
 }
 
-.hero h1 {
+.hero, .home-section h1 {
     font-size: 3.5rem;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
     margin-bottom: 20px;
 }
 
-.hero p {
+.hero, .home-section p {
     font-size: 1.5rem;
     margin-bottom: 30px;
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
 }
 
-.hero .btn, .login-btn, .register-btn, .btn-recipes {
+.hero .btn,.home .btn, .login-btn, .register-btn, .btn-recipes {
     background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
     border: none;
     font-size: 1.2rem;
@@ -107,12 +107,13 @@
 
 /*-----------------------add recipe style*/
 
+.home-section,
 .add-recipe-section,
 .edit-recipe-section,
 .my-recipes-section,
 .profile-section,
 .category-section,
-.about-us-section{
+.about-us-section {
     background: url('/images/background.jpg') no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
@@ -122,12 +123,13 @@
     position: relative;
 }
 
+.home-section::before,
 .add-recipe-section::before,
 .edit-recipe-section::before,
 .my-recipes-section::before,
 .profile-section::before,
 .category-section::before,
-.about-us-section::before{
+.about-us-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -138,12 +140,14 @@
     z-index: 1;
 }
 
+.home-section .home,
+.home-section .container,
 .add-recipe-section .container,
 .edit-recipe-section .container,
 .my-recipes-section .container,
 .profile-section .container,
 .category-section .container,
-.about-us-section .container{
+.about-us-section .container {
     z-index: 2;
     position: relative;
     color: white;
