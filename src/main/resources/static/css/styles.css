@@ -17,7 +17,7 @@
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
 }
 
-.hero .btn {
+.hero .btn, .login-btn, .register-btn, .btn-recipes {
     background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
     border: none;
     font-size: 1.2rem;
@@ -41,7 +41,7 @@
 .feature-card {
     background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
     border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
 }
 
@@ -49,6 +49,7 @@
     transform: translateY(-5px); /* Slight lift effect on hover */
     transition: transform 0.3s ease;
 }
+
 /*-------------------------------* home styles*/
 .fixed-image {
     height: 200px; /* Set a uniform height */
@@ -69,16 +70,39 @@
 }
 
 /*------------------------------* login styles*/
-.login, .register{
+.login, .register {
     background: url('/images/background.jpg') center center/cover no-repeat;
-}
-
-.login-btn, .register-btn {
-    background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9)); border: none;
 }
 
 .dark-background {
     background: rgba(0, 0, 0, 0.6);
+}
+
+/*----------------------- recipes styles*/
+.recipes {
+    position: relative;
+    background: url('/images/background.jpg') no-repeat center center/cover;
+    height: 100vh; /* Adjust to your desired height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipes::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* This creates the dark overlay */
+    z-index: 1;
+}
+
+.recipes .container {
+    position: relative;
+    z-index: 2; /* Ensures content appears above the overlay */
+    color: white; /* Adjust text color for better visibility */
 }
 
 
