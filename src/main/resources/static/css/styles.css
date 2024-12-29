@@ -107,7 +107,11 @@
 
 /*-----------------------add recipe style*/
 
-.add-recipe-section, .edit-recipe-section, .my-recipes-section, .profile-section {
+.add-recipe-section,
+.edit-recipe-section,
+.my-recipes-section,
+.profile-section,
+.category-section {
     background: url('/images/background.jpg') no-repeat center center/cover;
     min-height: 100vh;
     display: flex;
@@ -117,7 +121,11 @@
     position: relative;
 }
 
-.add-recipe-section::before, .edit-recipe-section::before, .my-recipes-section::before, .profile-section::before {
+.add-recipe-section::before,
+.edit-recipe-section::before,
+.my-recipes-section::before,
+.profile-section::before,
+.category-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -128,7 +136,11 @@
     z-index: 1;
 }
 
-.add-recipe-section .container, .edit-recipe-section .container, .my-recipes-section .container, .profile-section .container {
+.add-recipe-section .container,
+.edit-recipe-section .container,
+.my-recipes-section .container,
+.profile-section .container,
+.category-section .container {
     z-index: 2;
     position: relative;
     color: white;
@@ -185,7 +197,7 @@
     border-top: 4px solid #f85a3e;
 }
 
-.card.recipe-card .btn-like {
+.card.recipe-card .btn-like, .btn-view {
     background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
     border: none;
     font-size: 1.2rem;
@@ -193,7 +205,7 @@
     border-radius: 50px;
 }
 
-.card.recipe-card .btn-like:hover {
+.card.recipe-card .btn-like:hover, .btn-view:hover {
     background: linear-gradient(135deg, rgba(255, 87, 34, 0.9), rgba(255, 175, 75, 0.9));
 }
 
@@ -241,6 +253,15 @@
 .btn-add-comment:hover {
     background: linear-gradient(135deg, rgba(255, 87, 34, 1), rgba(255, 175, 75, 1));
 }
+
+/*---------------------------- about-us styles*/
+.about-us-section, .team-section {
+    background: linear-gradient(to right, #ffafbd, #ffc3a0);
+    color: #fff;
+    padding: 60px 0;
+}
+
+
 
 
 
