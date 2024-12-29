@@ -1,3 +1,14 @@
+.navbar-nav .btn {
+    border-radius: 50px; /* Rounded buttons */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .btn:hover {
+    background: linear-gradient(135deg, rgba(255, 87, 34, 1), rgba(255, 175, 75, 1));
+    color: #fff;
+}
+
+/*----------------------------hero and home styles*/
 .hero {
     background: url('/images/background.jpg') center center/cover no-repeat;
     color: black;
@@ -17,7 +28,7 @@
     text-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
 }
 
-.hero .btn,.home .btn, .login-btn, .register-btn, .btn-recipes {
+.hero .btn, .home .btn, .login-btn, .register-btn, .btn-recipes {
     background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
     border: none;
     font-size: 1.2rem;
