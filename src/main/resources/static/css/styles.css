@@ -105,6 +105,51 @@
     color: white; /* Adjust text color for better visibility */
 }
 
+/*-----------------------add recipe style*/
+
+.add-recipe-section {
+    background: url('/images/background.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    position: relative;
+}
+
+.add-recipe-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.add-recipe-section .container {
+    z-index: 2;
+    position: relative;
+    color: white;
+}
+
+.add-recipe-section .card {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-submit {
+    background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
+    border: none;
+}
+
+.btn-submit :hover {
+    background: linear-gradient(135deg, rgba(255, 87, 34, 1), rgba(255, 175, 75, 1));
+}
+
 
 
 
