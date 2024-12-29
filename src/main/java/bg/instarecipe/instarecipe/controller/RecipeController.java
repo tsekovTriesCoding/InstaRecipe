@@ -26,4 +26,9 @@ public class RecipeController {
     String edit() {
         return "edit-recipe";
     }
+
+    @GetMapping("/my-recipes")
+    String myRecipes() {
+        return "my-recipes";
+    }
 }
