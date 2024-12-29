@@ -1,5 +1,5 @@
 .navbar-nav .btn {
-    border-radius: 50px; /* Rounded buttons */
+    border-radius: 50px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -35,6 +35,9 @@
     padding: 10px 25px;
     border-radius: 50px;
 }
+.hero .btn:hover, .home .btn:hover,.btn-recipes:hover {
+    background: linear-gradient(135deg, rgba(255, 87, 34, 0.9), rgba(255, 175, 75, 0.9));
+}
 
 .hero .btn-outline-light {
     border: 2px solid #fff;
@@ -57,15 +60,15 @@
 }
 
 .feature-card:hover {
-    transform: translateY(-5px); /* Slight lift effect on hover */
+    transform: translateY(-5px);
     transition: transform 0.3s ease;
 }
 
 /*-------------------------------* home styles*/
 .fixed-image {
-    height: 200px; /* Set a uniform height */
-    object-fit: cover; /* Crop and scale the image proportionally */
-    width: 100%; /* Ensure the image takes up the full width of its container */
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .view-recipe-btn {
@@ -76,8 +79,8 @@
 
 .view-recipe-btn:hover {
     background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
-    color: #fff; /* Change text color to white for contrast */
-    border-color: transparent; /* Hide the border on hover */
+    color: #fff;
+    border-color: transparent;
 }
 
 /*------------------------------* login styles*/
@@ -93,7 +96,7 @@
 .recipes {
     position: relative;
     background: url('/images/background.jpg') no-repeat center center/cover;
-    height: 100vh; /* Adjust to your desired height */
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,14 +109,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.6); /* This creates the dark overlay */
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
 .recipes .container {
     position: relative;
-    z-index: 2; /* Ensures content appears above the overlay */
-    color: white; /* Adjust text color for better visibility */
+    z-index: 2;
+    color: white;
 }
 
 /*-----------------------add recipe style*/
@@ -170,22 +173,12 @@
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-.btn-submit {
-    background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
-    border: none;
-}
-
-.btn-submit :hover {
-    background: linear-gradient(135deg, rgba(255, 87, 34, 1), rgba(255, 175, 75, 1));
-}
-
 /*--------------------------recipe-details styles*/
 .recipe-details-page {
     position: relative;
     background: url('/images/background.jpg') no-repeat center center fixed;
     background-size: cover;
-    color: white; /* Ensures text is readable over the dark background */
+    color: white;
 }
 
 .recipe-details-page::before {
@@ -195,8 +188,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6); /* Adjust the opacity for darkness */
-    z-index: -1; /* Keeps the overlay behind the content */
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
 }
 
 .card.recipe-card {
@@ -215,7 +208,9 @@
     border-top: 4px solid #f85a3e;
 }
 
-.card.recipe-card .btn-like, .btn-view {
+.card.recipe-card .btn-like,
+.btn-view,
+.btn-submit{
     background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
     border: none;
     font-size: 1.2rem;
@@ -223,7 +218,9 @@
     border-radius: 50px;
 }
 
-.card.recipe-card .btn-like:hover, .btn-view:hover {
+.card.recipe-card .btn-like:hover,
+.btn-view:hover,
+.btn-submit:hover{
     background: linear-gradient(135deg, rgba(255, 87, 34, 0.9), rgba(255, 175, 75, 0.9));
 }
 
@@ -271,15 +268,3 @@
 .btn-add-comment:hover {
     background: linear-gradient(135deg, rgba(255, 87, 34, 1), rgba(255, 175, 75, 1));
 }
-
-/*---------------------------- about-us styles*/
-
-
-
-
-
-
-
-
-
-
