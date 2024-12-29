@@ -9,6 +9,11 @@ public class CategoryController {
 
     @GetMapping("/categories/{name}")
     public String category(@PathVariable String name) {
-        return "/category/" + name;
+        return "category";
+    }
+
+    @GetMapping("/category")
+    public String categoryBase() {
+        return "category";
     }
 }
