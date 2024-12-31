@@ -1,6 +1,5 @@
 .navbar-nav .btn {
-    border-radius: 50px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    background: linear-gradient(135deg, rgba(255, 175, 75, 0.9), rgba(255, 87, 34, 0.9));
 }
 
 .navbar-nav .btn:hover {
