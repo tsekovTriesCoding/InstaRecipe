@@ -42,16 +42,16 @@ public class UserController {
             return "redirect:/users/login";
         }
 
-//        boolean validCredentials = this.userService.checkCredentials(loginDTO.getUsername(), loginDTO.getPassword());
-//
-//        if (!validCredentials) {
-//            redirectAttributes
-//                    .addFlashAttribute("loginDTO", loginDTO)
-//                    .addFlashAttribute("validCredentials", false);
-//            return "redirect:/users/login";
-//        }
-//
-//        this.userService.login(loginDTO.getUsername());
+        boolean validCredentials = this.userService.checkCredentials(loginDTO.getEmail(), loginDTO.getPassword());
+
+        if (!validCredentials) {
+            redirectAttributes
+                    .addFlashAttribute("loginDTO", loginDTO)
+                    .addFlashAttribute("validCredentials", false);
+            return "redirect:/users/login";
+        }
+
+        this.userService.login(loginDTO.getEmail());
 
         return "redirect:/home";
     }
